@@ -5,7 +5,8 @@ import { Link } from 'expo-router';
 const index = () => {
   return (
     <View style={styles.container}>
-    <Link href="/search" style={{backgroundColor:"red" , color:"white" , padding:7 , borderRadius:5 , fontWeight:"600" , fontSize:18}}> Go to index</Link>
+    <Link href="/search" style={{backgroundColor:"red" , color:"white" , padding:7 , borderRadius:5 , fontWeight:"600" , fontSize:18 , marginBottom:18}}> Go to Search</Link>
+    <Link href="/profile" style={{backgroundColor:"red" , color:"white" , padding:7 , borderRadius:5 , fontWeight:"600" , fontSize:18}}> Go to profile</Link>
     </View>
   )
 }
@@ -17,5 +18,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor:'yellow',
   }
 })

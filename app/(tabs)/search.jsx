@@ -27,7 +27,7 @@ const OpenURLButton = ({url, children}) => {  // url ເເມ່ນຮັບຄ
 const search = () => {
   return (
     <View style={styles.container}>
-    <Link href="/" style={{backgroundColor:"red" , color:"white" , padding:7 , borderRadius:5 , marginBottom:18 , fontWeight:"600" , fontSize:18}}> Go to Search</Link>
+    <Link href="/" style={{backgroundColor:"red" , color:"white" , padding:7 , borderRadius:5 , marginBottom:18 , fontWeight:"600" , fontSize:18}}> Go to index</Link>
 
     <OpenURLButton url={supportedURL}>Open Supported URL </OpenURLButton> {/* url={supportedURL} ເເມ່ນ ການສົ່ງຄ່າຕົວເເປລ supportedURL ໄປໃຫ້ parameter url, ສ່ວນ ຕົວຫນັງສື Open Supported URL ເເມ່ນ jsx ທີ່ສົ່ງໄປໃຫ້ children */}
     <hr/>
@@ -43,5 +43,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: "pink",
   }
 })
